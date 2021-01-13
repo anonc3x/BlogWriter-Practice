@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * {
+            font-family: sans-serif;
+        }
+        body {
+            background-color: royalblue;
+        }
+        main {
+            width: 900px;
+            max-width: 90%;
+            margin: 0 auto;
+        }
+        section {
+           background-color: whitesmoke;
+            padding: 1em;
+            margin: 1em;
+            border-radius: 1em;
+        }
+        .title {
+            color: aquamarine;
+        }
+        .players, .blogs, .courses{
+            display: grid;
+            grid-gap: 30px;
+            place-items: center;
+            margin-top: 20px;
+        }
+        .players, .courses{
+            grid-template-columns: repeat(3, 1fr);
+        }
+        .player, article {
+            display: flex;
+            align-items: center;
+        }
+        .player img {
+            height: 50px;
+            margin-right: 20px;
+            border: 3px solid aquamarine;
+            border-radius: 50%;
+        }
+        .blogs {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+        }
+        article img {
+            width: 200px;
+            margin-right: 20px;
+        }
+        .course img {
+            width: 200px;
+        }
+        .footer {
+            text-align: center;
+            color: rgb(3, 151, 102);
+        }
+
+        @media (max-width: 992px){
+            .players, .courses {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            .blogs {
+                grid-template-columns: repeat(1, 1fr);
+            }
+        }
+        @media (max-width: 668px) {
+            .players, .courses {
+                grid-template-columns: repeat(1, 1fr);
+            }
+            article {
+                display: block;
+            }
+        }
+
+
+    </style>
+    <title>Bloggers</title>
+</head>
+<body>
+    <main>
+        <section>
+            <h1 class="title">Top Bloggers</h1>
+            <div class="players">
+                <div class="player">
+                    <img src="images/Ellipse.png" alt="">
+                    <h3>Jhon Smith</h3>
+                </div>
+                <div class="player">
+                    <img src="images/Ellipse-1.png" alt="">
+                    <h3>Jhon Smith</h3>
+                </div>
+                <div class="player">
+                    <img src="images/Ellipse-2.png" alt="">
+                    <h3>Jhon Smith</h3>
+                </div>
+                <div class="player">
+                    <img src="images/Ellipse-3.png" alt="">
+                    <h3>Jhon Smith</h3>
+                </div>
+                <div class="player">
+                    <img src="images/Ellipse-4.png" alt="">
+                    <h3>Jhon Smith</h3>
+                </div>
+                <div class="player">
+                    <img src="images/Ellipse-5.png" alt="">
+                    <h3>Jhon Smith</h3>
+                </div>
+            </div>
+        </section>
+        <section>
+            <h1 class="title">Top Blogs</h1>
+            <div class="blogs">
+                <article>
+                    <div class="thumbnail">
+                        <img src="images/Mask Group.png" alt="">
+                    </div>
+                    <div class="info">
+                        <h3>
+                            13 of My Favorite UI/UX Items
+                        </h3>
+                        <p>By <a href="#">John Smith</a></p>
+                    </div>
+                </article>
+                <article>
+                    <div class="thumbnail">
+                        <img src="images/Mask Group-1.png" alt="">
+                    </div>
+                    <div class="info">
+                        <h3>
+                            13 of My Favorite UI/UX Items
+                        </h3>
+                        <p>By <a href="#">John Smith</a></p>
+                    </div>
+                </article>
+                <article>
+                    <div class="thumbnail">
+                        <img src="images/Mask Group-2.png" alt="">
+                    </div>
+                    <div class="info">
+                        <h3>
+                            13 of My Favorite UI/UX Items
+                        </h3>
+                        <p>By <a href="#">John Smith</a></p>
+                    </div>
+                </article>
+                <article>
+                    <div class="thumbnail">
+                        <img src="images/Mask Group.png" alt="">
+                    </div>
+                    <div class="info">
+                        <h3>
+                            13 of My Favorite UI/UX Items
+                        </h3>
+                        <p>By <a href="#">John Smith</a></p>
+                    </div>
+                </article>
+            </div>
+        </section>
+        <section>
+            <h1 class="title">Top Courses</h1>
+            <div class="courses">
+                <div class="course">
+                    <img src="images/Mask Group-3.png" alt="">
+                    <h3>React | Complete Guide - 2020</h3>
+                    <p><a href="#">Read More..</a></p>
+                </div>
+                <div class="course">
+                    <img src="images/Mask Group-4.png" alt="">
+                    <h3>React | Complete Guide - 2020</h3>
+                    <p><a href="#">Read More..</a></p>
+                </div>
+                <div class="course">
+                    <img src="images/Mask Group-3.png" alt="">
+                    <h3>React | Complete Guide - 2020</h3>
+                    <p><a href="#">Read More..</a></p>
+                </div>
+            </div>
+        </section>
+        <section class="footer">
+            <small>Copyright @ Rabi, 2021 | No Rights Reserved.</small>
+        </section>
+
+    </main>
+</body>
+</html>
